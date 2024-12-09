@@ -74,10 +74,11 @@ function formatDate(dateString) {
 
 /**
  * Converts an amount in USD to EUR using a fixed exchange rate.
+ * The result is rounded to two decimal places.
  * 
  * @param {number} usdAmount - The amount in USD to be converted to EUR.
- * @returns {number} The equivalent amount in EUR, based on the fixed exchange rate.
- *                   The returned value is rounded to two decimal places.
+ * @returns {string} The equivalent amount in EUR, based on the fixed exchange rate, 
+ *                   formatted as a string with two decimal places.
  */
 function convertUSDToEUR(usdAmount) {
     const exchangeRate = 0.93; // Example exchange rate: 1 USD = 0,93 EUR
