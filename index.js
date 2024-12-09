@@ -150,8 +150,8 @@ function extractData(text) {
         const extractedData = {
             rechnungs_nr: invoiceNumberMatches ? invoiceNumberMatches[1] || invoiceNumberMatches[0] : null,
             rechnungs_datum: invoiceDateMatches ? formatDate(invoiceDateMatches[1]) : null,
-            gesamt_betrag_brutto: grossAmount,
-            gesamt_betrag_netto: netAmount
+            gesamt_betrag_brutto: `${grossAmount}€`,
+            gesamt_betrag_netto: `${netAmount}€`
         };
 
         return extractedData;
