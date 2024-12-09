@@ -73,6 +73,19 @@ function formatDate(dateString) {
 }
 
 /**
+ * Converts an amount in USD to EUR using a fixed exchange rate.
+ * 
+ * @param {number} usdAmount - The amount in USD to be converted to EUR.
+ * @returns {number} The equivalent amount in EUR, based on the fixed exchange rate.
+ *                   The returned value is rounded to two decimal places.
+ */
+function convertUSDToEUR(usdAmount) {
+    const exchangeRate = 0.93; // Example exchange rate: 1 USD = 0,93 EUR
+    const eurAmount = usdAmount * exchangeRate;
+    return eurAmount.toFixed(2);
+}
+
+/**
  * Extracts relevant financial and invoice data (invoice number, date, net amount, gross amount, tax rate, and currency)
  * from a given text using regular expressions.
  * The function processes multiple possible formats for the data and returns an object containing:
@@ -119,6 +132,11 @@ function extractData(text) {
             const filteredNetMatches = netAmountMatches.filter(match => match !== undefined);
             const netString = filteredNetMatches[2].replace(',', '.');
             netAmount = parseFloat(netString).toFixed(2);
+
+            if (currencyMatches[0] === '$') {
+                netAmount = convertUSDToEUR(netAmount);
+            }
+
             tax = taxRateMatches ? taxRateMatches[1] : null;
 
             if (tax === 0) {
