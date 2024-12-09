@@ -1,0 +1,25 @@
+16. Feb. 2024
+Musterwerke X GmbH
+Musterstr. 75
+12354 Musterheim
+
+Rechnung
+Datum: 16.02.2024
+Rechnungsnummer: 202400195
+Ansprechperson: Max Mustermann
+
+Rechnungspositionen:
+Position 1: Papier C6, Rolle; Gewicht: 2T; Menge: 5; Preis/Stück (netto): €875,-; Gesamt (netto): €4375,-
+Position 2: Lieferung per Spedition; Gewicht: -; Menge: 1; Preis/Stück (netto): €490,-; Gesamt (netto): €490,-
+Position 3: Verpackung; Gewicht: -; Menge: 1; Preis/Stück (netto): €0,-; Gesamt (netto): €0,-
+
+Gesamtbetrag: €4865,-
+
+Wir bitten den Gesamtbetrag nach Erhalt dieser Rechnung unter Angabe des Verwendungszweckes
+202400195-54321 innerhalb von 14 Tagen ohne Abzug auf unser Konto zu überweisen.
+ 
+Musterwerke X GmbH
+Musterbank AG
+IBAN: DE12 3456 7890 1234 5678 90
+BIC: ABCD1234
+Verwendungszweck: 202400195-54321

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "pdf-parse": "^1.1.1"
+  }
+}
